@@ -21,7 +21,7 @@ u = sin(pi * x / L); % Initial temperature distribution (sine function)
 u(1) = 0; % Left boundary condition (boundary temperature is 0)
 u(end) = 0; % Right boundary condition (boundary temperature is 0)
 
-% Explicit Euler method for solving the heat conduction equation
+% Explicit Euler method for solving the heat equation
 tic; % Start timing
 u_matrix = zeros(M+1, N+1); % Store the results for each time step
 u_matrix(1, :) = u; % Storing initial conditions
@@ -63,7 +63,7 @@ xlabel('x'); % x-axis label
 ylabel('t'); % y-axis label
 title('2D Visualization of the Solution to the Heat Equation'); % Figure title
 
-% Added graph visualization of numerical solutions to the heat conduction equation
+% Added graph visualization of numerical solutions to the heat equation
 figure;
 plot(x, u_matrix(1, :), 'r', 'LineWidth', 2); % Initial conditions
 hold on;
