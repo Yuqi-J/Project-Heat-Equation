@@ -1,5 +1,7 @@
 # MACM 416 Final Project: Numerical Solution of the Heat Equation
 
+The heat equation is a classical PDE equation, it is a differential equation containing partial derivatives. It describes the isotropic diffusion of a quantity, and is important for many applications in engineering and physics, among others.
+
 ## Group members
 - Yuqi Jia
 
